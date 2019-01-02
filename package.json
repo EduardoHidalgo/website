@@ -12,11 +12,7 @@
   "author": "Eduardo Hidalgo Díaz Rugama",
   "license": "ISC",
   "dependencies": {
-    "@material-ui/core": "latest",
-    "@material-ui/icons": "latest",
-    "@material-ui/styles": "latest",
     "@zeit/next-css": "^1.0.1",
-    "jss": "latest",
     "next": "latest",
     "react": "next",
     "react-dom": "next",
