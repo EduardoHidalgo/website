@@ -1,8 +1,0 @@
-{
-    "filterType": "dropdown",
-    "responsive": "scroll",
-    "count": 30,
-    "selectableRows": false,
-    "rowsPerPage": 10,
-    "rowsPerPageOptions": [10, 20, 30, 100]
-  }
