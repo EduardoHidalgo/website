@@ -1,0 +1,27 @@
+{
+  "name": "next-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [],
+  "author": "Eduardo Hidalgo Díaz Rugama",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/core": "latest",
+    "@material-ui/icons": "latest",
+    "@material-ui/styles": "latest",
+    "firebase": "^5.7.2",
+    "isomorphic-fetch": "^2.2.1",
+    "jss": "latest",
+    "mui-datatables": "^2.0.0-beta-41",
+    "next": "latest",
+    "prop-types": "latest",
+    "react": "next",
+    "react-dom": "next"
+  }
+}

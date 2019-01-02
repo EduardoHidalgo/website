@@ -1,0 +1,8 @@
+{
+    "name": "blog",
+    "alias": "neofitech.now.sh",
+    "version": 2,
+    "builds": [
+      { "src": "package.json", "use": "@now/next" }
+    ]
+  }

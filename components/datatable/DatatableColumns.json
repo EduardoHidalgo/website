@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Name",
+    "options": {
+      "display": true,
+      "filter": false
+    }
+  },
+  {
+    "name": "Url",
+    "options": {
+      "filter": true,
+      "sort": false
+    }
+  }
+]
