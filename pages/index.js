@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
-import params from '../src/particlesjs-config.json';
-import '../src/index.css';
-import Content from "../src/content.js";
+import Content from "../components/content.js";
+import params from '../src/particles.json';
+import '../src/bootstrap';
+import '../src/styles/index.css';
 
 function Index() {
   var ParticlesJS = null;

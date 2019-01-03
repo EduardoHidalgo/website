@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    overflow:hidden;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/static/darkbg.jpg");
+    background-size: cover;
+}
+
+#particles-js {
+    display: inline-block;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+}
+
+.content {
+    position: absolute;
+    display: inline-block;
+    width: 40vw;
+    height: 80vh;
+    cursor: pointer;
+    background-color: rgba(255, 0, 0, 0.205);
+    margin-top: 10vh;
+    margin-left: 5vw;
+}
