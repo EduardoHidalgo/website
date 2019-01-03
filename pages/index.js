@@ -31,7 +31,8 @@ function Index() {
       <Particles
         params={params}
         style={{
-          backgroundColor: 'black' 
+          backgroundColor: 'black',
+          backgroundImage: 'radial-gradient(	#293336, #65737e)'
         }}/>
     </div>
   )
