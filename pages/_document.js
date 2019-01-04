@@ -15,7 +15,7 @@ class MyDocument extends Document {
           <meta name="author" content="Marina V&V, sistemas@marinavv.com"/>
           {/* Use minimum-scale=1 to enable GPU rasterization */}
           <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"/>
-          <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"></link>
+          <link href="https://fonts.googleapis.com/css?family=Oswald|PT+Sans+Narrow" rel="stylesheet"></link>
         </Head>
         <body>
           <Main />
