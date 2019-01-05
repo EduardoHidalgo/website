@@ -10,7 +10,7 @@ class MyDocument extends Document {
         <Head>
           {/* <!-- Meta Tags --> */}
           <meta httpEquiv="X-UA-Compatible" content="IE=Edge"/>
-          <meta charSet="UTF-8"/>
+          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
           <meta name="Robots" content="all"/>
           <meta name="author" content="Marina V&V, sistemas@marinavv.com"/>
           {/* Use minimum-scale=1 to enable GPU rasterization */}
