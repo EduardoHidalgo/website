@@ -1,18 +1,31 @@
+@media only screen and (min-width: 600px) {
+    html {
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+    ::-webkit-scrollbar {
+        width: 0px;  /* remove scrollbar space */
+        background: transparent;  /* optional: just make scrollbar invisible */
+    }
+  }
+
 body {
     margin: 0;
-    overflow:hidden;
     background-color: black;
     width: 100vw;
     height: 100vh;
     background-image: url("/static/darkbg.jpg");
     background-size: cover;
+    background-attachment: fixed;
+ 
 }
 
 #particles-js {
+    position: fixed;
     display: inline-block;
     width: 100vw;
     height: 100vh;
-    z-index: 2;
+    z-index: -10;
 }
 
 .content {
