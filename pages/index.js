@@ -11,7 +11,7 @@ function Index() {
   if (typeof window !== 'undefined') { 
     ParticlesJS = require('particles.js');
   }
-  // instancia las particulas ddinámicamente en Client-side
+  // instancia las particulas dinámicamente en Client-side
   useEffect(() => {
     if (typeof window !== 'undefined') particlesJS('particles-js', params)
   }, []);
