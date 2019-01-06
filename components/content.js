@@ -56,6 +56,7 @@ const useStyles = makeStyles(theme => ({
         background: 'rgba(0, 0, 0, 0.10)',
         height: '80px',
         borderBottom: '3px solid white',
+        overflow: 'hidden'
     },
     paper_proyect: {
         background: 'transparent',
@@ -101,6 +102,13 @@ const useStyles = makeStyles(theme => ({
         display: 'inline-block',
         lineHeight: 'initial',
         overflow: 'initial',
+    },
+    typo_job: {
+        color: 'gray',
+        fontFamily: 'PT Sans Narrow, sans-serif',
+        fontWeight: '300',
+        paddingLeft: '0',
+        display: 'inline-block'
     },
     typo_skill: {
         color: 'black',
@@ -188,11 +196,20 @@ function Content(props) {
                 <Grid container className={' gridPortfolio'}>
                     <Grid item xs={3} className={classes.grid_portfolio}>
                         <Paper square className={classes.paper_portfolio}>
+                        <div className={'portfolioContainer'}>
                             <div className='bg pt1'></div>
+                                <Paper square className={'rol'}>
+                                    <Typography noWrap variant={'body2'} className={classes.typo_job}>Tester Semi-Senior</Typography>
+                                    <Typography noWrap variant={'body2'} className={classes.typo_text}>12/01/18 - 15/09/18</Typography>
+                                </Paper>
+                            </div>
                         </Paper>
                     </Grid>
                     <Grid item xs={3} className={classes.grid_portfolio}>
                         <Paper square className={classes.paper_portfolio}>
+                           {/*  <div className='rol rol2'>
+                                <Typography noWrap variant={'body2'} className={classes.typo_job}>MERN Web Developer</Typography>
+                            </div> */}
                             <div className='bg pt2'></div>
                         </Paper>
                     </Grid>
