@@ -37,6 +37,12 @@ class MyApp extends App {
     meta.setAttribute('http-equiv', 'Content-Language');
     meta.setAttribute('content', userLang);
     document.getElementsByTagName('head')[0].appendChild(meta);
+
+    //código para Google Analytics
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-131822637-1');
   }
 
   render() {

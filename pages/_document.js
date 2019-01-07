@@ -50,6 +50,9 @@ class MyDocument extends Document {
           <meta name="Robots" content="all"/>
           <meta name="google-site-verification" content="69Xur2nA0FF1A0mLjvdVdr1-T5Zbp7UIOITLaZ7vK9w" />
           <link href="https://fonts.googleapis.com/css?family=Oswald|PT+Sans+Narrow" rel="stylesheet"></link>
+
+          {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
+          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131822637-1"></script>
         </Head>
         <body>
           <Main />
