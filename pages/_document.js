@@ -12,7 +12,7 @@ class MyDocument extends Document {
           <meta httpEquiv="X-UA-Compatible" content="IE=Edge"/>
           <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
           <meta name="Robots" content="all"/>
-          <meta name="author" content="Marina V&V, sistemas@marinavv.com"/>
+          <meta name="author" content="Eduardo Hidalgo Díaz Rugama"/>
           {/* Use minimum-scale=1 to enable GPU rasterization */}
           <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"/>
           <link href="https://fonts.googleapis.com/css?family=Oswald|PT+Sans+Narrow" rel="stylesheet"></link>
