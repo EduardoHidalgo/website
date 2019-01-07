@@ -108,7 +108,10 @@ const useStyles = makeStyles(theme => ({
         fontFamily: 'PT Sans Narrow, sans-serif',
         fontWeight: '300',
         paddingLeft: '0',
-        display: 'inline-block'
+        display: 'inline-block',
+        width: '100%',
+        lineHeight: '1',
+        paddingTop: '20px'
     },
     typo_skill: {
         color: 'black',
@@ -131,11 +134,12 @@ function Content(props) {
     "Material-UI", "Now.sh", "C#", "SQL", "Firebase"];
 
     const proyects = [
-        {url: "/", name: "React-Material-UI", description: "Few layouts builded with Material-UI"},
-        {url: "/", name: "Boilerplate-React-CSR", description: "Boilerplate to begin proyects with React in CSR architecture"},
-        {url: "/", name: "Boilerplate-Nextjs", description: "SSR boilerplate with React and Material-UI integration"},
-        {url: "/", name: "Cell-Animation", description: "nicely algorithm about cells movement"},
-        {url: "/", name: "CoveControl", description: "Some old c# winforms school proyect"}
+        {url: "/", name: "Personal-Website", description: "Repo of this awesome personal website!"},
+        {url: "https://github.com/EduardoHidalgo/React-Material-UI", name: "React-Material-UI", description: "Few layouts builded with Material-UI"},
+        {url: "https://github.com/EduardoHidalgo/Boilerplate-React-CSR", name: "Boilerplate-React-CSR", description: "Boilerplate to begin proyects with React in CSR architecture"},
+        {url: "https://github.com/EduardoHidalgo/Boilerplate-Nextjs", name: "Boilerplate-Nextjs", description: "SSR boilerplate with React and Material-UI integration"},
+        {url: "https://github.com/EduardoHidalgo/Cell-Animation", name: "Cell-Animation", description: "nicely algorithm about cells movement"},
+        {url: "https://github.com/EduardoHidalgo/CoveControl", name: "CoveControl", description: "Some old c# winforms school proyect"}
     ];
 
     const skillsMapped = skills.map((skill, i) => 
@@ -150,35 +154,33 @@ function Content(props) {
     const proyectsMapped = proyects.map((proyect, index) => {
 
         if (props.width !== 'xs' && props.width !== 'sm') {
-            return  <Paper className={classes.paper_proyect} key={index}>
-                        <Typography noWrap variant={'body2'} className={classes.typo_proyect}>
-                            <Link href={proyect.url}><a target="_blank">{props.width !== 'xs' && props.width !== 'sm' ? s1 : ''} {proyect.name}</a></Link>
-                        </Typography>
-                        <Typography noWrap variant={'body2'} className={classes.typo_proyect}>&nbsp;- {proyect.description}</Typography>
-                    </Paper>
+            return  (
+                <Paper className={classes.paper_proyect} key={index}>
+                    <Typography noWrap variant={'body2'} className={classes.typo_proyect}>
+                        <Link href={proyect.url}><a target="_blank">{props.width !== 'xs' && props.width !== 'sm' ? s1 : ''} {proyect.name}</a></Link>
+                    </Typography>
+                    <Typography noWrap variant={'body2'} className={classes.typo_proyect}>&nbsp;- {proyect.description}</Typography>
+                </Paper>
+            )
         } else {
-            return  <React.Fragment key={index}>
-                        <Paper className={classes.paper_proyect}>
-                            <Typography noWrap variant={'body2'} className={classes.typo_proyect}>
-                                <Link href={proyect.url}><a target="_blank">{proyect.name}</a></Link>
-                            </Typography>
-                        </Paper>
-                        <Paper className={classes.paper_proyect} >
-                            <Typography noWrap variant={'body2'} className={classes.typo_proyect}>{proyect.description}</Typography>
-                        </Paper>
-                    </React.Fragment>
+            return (
+                <React.Fragment key={index}>
+                    <Paper className={classes.paper_proyect}>
+                        <Typography noWrap variant={'body2'} className={classes.typo_proyect}>
+                            <Link href={proyect.url}><a target="_blank">{proyect.name}</a></Link>
+                        </Typography>
+                    </Paper>
+                    <Paper className={classes.paper_proyect} >
+                        <Typography noWrap variant={'body2'} className={classes.typo_proyect}>{proyect.description}</Typography>
+                    </Paper>
+                </React.Fragment>
+            )
         }
     });
 
-    function Job1(value) {
-        setJob1(value);
-        console.log(value);
-    }
+    function Job1(value) { setJob1(value) }
 
-    function Job2(value) {
-        setJob2(value);
-        console.log(value);
-    }
+    function Job2(value) { setJob2(value) }
 
 
     const content = (
@@ -208,24 +210,32 @@ function Content(props) {
             <Hidden smDown>
                 <Grid container className={' gridPortfolio'}>
                     <Grid item xs={3} className={classes.grid_portfolio}>
-                        <Paper square className={classes.paper_portfolio}>
-                        <div className={'portfolioContainer ' + job1} 
-                        onMouseEnter={() => Job1('enter')} onMouseLeave={() => Job1('leave')}>
-                            <div className={'bg pt1'}></div>
-                            <Paper square className={'rol'}>
-                                <Typography noWrap variant={'body2'} className={classes.typo_job}>Tester Semi-Senior</Typography>
-                                <Typography noWrap variant={'body2'} className={classes.typo_text}>12/01/18 - 15/09/18</Typography>
+                        <a href="https://www.granplan.com/" target="_blank">
+                            <Paper square className={classes.paper_portfolio}>
+                                <div className={'portfolioContainer ' + job1} 
+                                onMouseEnter={() => Job1('enter')} onMouseLeave={() => Job1('leave')}>
+                                    <div className={'bg pt1'}></div>
+                                    <Paper square className={'rol'}>
+                                        <Typography noWrap variant={'body2'} align='center' className={classes.typo_job}>Tester Semi-Senior</Typography>
+                                        <Typography noWrap variant={'body2'} align='center' className={classes.typo_text + ' jobdate'}>12/01/18 - 15/09/18</Typography>
+                                    </Paper>
+                                </div>
                             </Paper>
-                        </div>
-                        </Paper>
+                        </a>
                     </Grid>
                     <Grid item xs={3} className={classes.grid_portfolio}>
-                        <Paper square className={classes.paper_portfolio}>
-                           {/*  <div className='rol rol2'>
-                                <Typography noWrap variant={'body2'} className={classes.typo_job}>MERN Web Developer</Typography>
-                            </div> */}
-                            <div className='bg pt2'></div>
-                        </Paper>
+                        <a href="https://webmarina.now.sh/" target="_blank">
+                            <Paper square className={classes.paper_portfolio}>
+                            <div className={'portfolioContainer ' + job2} 
+                            onMouseEnter={() => Job2('enter')} onMouseLeave={() => Job2('leave')}>
+                                <div className={'bg pt2'}></div>
+                                    <Paper square className={'rol'}>
+                                        <Typography noWrap variant={'body2'} align='center' className={classes.typo_job}>MERN Web dev</Typography>
+                                        <Typography noWrap variant={'body2'} align='center' className={classes.typo_text + ' jobdate'}>04/09/18 - Actually</Typography>
+                                    </Paper>
+                                </div>
+                            </Paper>
+                        </a>
                     </Grid>
                 </Grid>
             </Hidden>
