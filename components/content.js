@@ -124,6 +124,8 @@ const useStyles = makeStyles(theme => ({
 
 function Content(props) {
     const classes = useStyles();
+    const [job1, setJob1] = useState('none');
+    const [job2, setJob2] = useState('none');
 
     const skills = ["MERN", "React", "Next.js", "Express.js", "Webpack", 
     "Material-UI", "Now.sh", "C#", "SQL", "Firebase"];
@@ -168,6 +170,17 @@ function Content(props) {
         }
     });
 
+    function Job1(value) {
+        setJob1(value);
+        console.log(value);
+    }
+
+    function Job2(value) {
+        setJob2(value);
+        console.log(value);
+    }
+
+
     const content = (
         <Fragment>
             {/* Name */}
@@ -196,13 +209,14 @@ function Content(props) {
                 <Grid container className={' gridPortfolio'}>
                     <Grid item xs={3} className={classes.grid_portfolio}>
                         <Paper square className={classes.paper_portfolio}>
-                        <div className={'portfolioContainer'}>
-                            <div className='bg pt1'></div>
-                                <Paper square className={'rol'}>
-                                    <Typography noWrap variant={'body2'} className={classes.typo_job}>Tester Semi-Senior</Typography>
-                                    <Typography noWrap variant={'body2'} className={classes.typo_text}>12/01/18 - 15/09/18</Typography>
-                                </Paper>
-                            </div>
+                        <div className={'portfolioContainer ' + job1} 
+                        onMouseEnter={() => Job1('enter')} onMouseLeave={() => Job1('leave')}>
+                            <div className={'bg pt1'}></div>
+                            <Paper square className={'rol'}>
+                                <Typography noWrap variant={'body2'} className={classes.typo_job}>Tester Semi-Senior</Typography>
+                                <Typography noWrap variant={'body2'} className={classes.typo_text}>12/01/18 - 15/09/18</Typography>
+                            </Paper>
+                        </div>
                         </Paper>
                     </Grid>
                     <Grid item xs={3} className={classes.grid_portfolio}>
