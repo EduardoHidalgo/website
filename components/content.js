@@ -4,7 +4,7 @@ import '../src/bootstrap';
 import { makeStyles } from '@material-ui/styles';
 import { Paper, Grid, Typography, withWidth } from '@material-ui/core';
 import { Hidden } from '@material-ui/core';
-import '../src/styles/component.css';
+import '../src/styles/content.css';
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -134,7 +134,7 @@ function Content(props) {
     "Material-UI", "Now.sh", "C#", "SQL", "Firebase"];
 
     const proyects = [
-        {url: "/", name: "Personal-Website", description: "Repo of this awesome personal website!"},
+        {url: "https://github.com/EduardoHidalgo/Personal-Website", name: "Personal-Website", description: "Repo of this awesome personal website!"},
         {url: "https://github.com/EduardoHidalgo/React-Material-UI", name: "React-Material-UI", description: "Few layouts builded with Material-UI"},
         {url: "https://github.com/EduardoHidalgo/Boilerplate-React-CSR", name: "Boilerplate-React-CSR", description: "Boilerplate to begin proyects with React in CSR architecture"},
         {url: "https://github.com/EduardoHidalgo/Boilerplate-Nextjs", name: "Boilerplate-Nextjs", description: "SSR boilerplate with React and Material-UI integration"},
@@ -259,23 +259,23 @@ function Content(props) {
                 <Paper className={classes.paper_proyect}>
                     <Typography noWrap variant={'body2'} className={classes.typo_proyect}>You can contact me through my email</Typography>
                     <Typography noWrap variant={'body2'} className={classes.typo_proyect}>
-                        <Link href="/"><a target="_blank">&nbsp;ingeduardohidalgo@hotmail.com</a></Link>,
+                        <Link href="mailto:ingeduardohidalgo@hotmail.com"><a>&nbsp;ingeduardohidalgo@hotmail.com</a></Link>,
                     </Typography>
                     <Typography noWrap variant={'body2'} className={classes.typo_proyect}>&nbsp;consult my profile</Typography>
                     <Typography noWrap variant={'body2'} className={classes.typo_proyect}>
-                        <Link href="/"><a target="_blank">&nbsp;LinkedIn</a></Link>,
+                        <Link href="https://www.linkedin.com/in/eduardo-hdr/"><a target="_blank">&nbsp;LinkedIn</a></Link>,
                     </Typography>
                     <Typography noWrap variant={'body2'} className={classes.typo_proyect}>&nbsp;follow me at</Typography>
                     <Typography noWrap variant={'body2'} className={classes.typo_proyect}>
-                        <Link href="/"><a target="_blank">&nbsp;Twitter</a></Link>,
+                        <Link href="https://twitter.com/EduardoHidalgo0"><a target="_blank">&nbsp;Twitter</a></Link>,
                     </Typography>
                     <Typography noWrap variant={'body2'} className={classes.typo_proyect}>&nbsp;see my proyects in</Typography>
                     <Typography noWrap variant={'body2'} className={classes.typo_proyect}>
-                        <Link href="/"><a target="_blank">&nbsp;Github</a></Link>,
+                        <Link href="https://github.com/EduardoHidalgo"><a target="_blank">&nbsp;Github</a></Link>,
                     </Typography>
                     <Typography noWrap variant={'body2'} className={classes.typo_proyect}>&nbsp;and view my Platzi certificates at</Typography>
                     <Typography noWrap variant={'body2'} className={classes.typo_proyect}>
-                        <Link href="/"><a target="_blank">&nbsp;Platzi.</a></Link>
+                        <Link href="https://platzi.com/@EduardoHidalgo/"><a target="_blank">&nbsp;Platzi.</a></Link>
                     </Typography>
                 </Paper>
             </Grid>
