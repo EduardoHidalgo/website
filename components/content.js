@@ -80,12 +80,14 @@ const useStyles = makeStyles(theme => ({
         color: 'white',
         fontFamily: 'Oswald, sans-serif',
         paddingLeft: '0',
+        fontSize: '2.125rem'
     },
     typo_textdivider: {
         color: 'black',
         fontFamily: 'Oswald, sans-serif',
         paddingLeft: theme.spacing.unit * 1,
-        paddingRight: theme.spacing.unit * 1
+        paddingRight: theme.spacing.unit * 1,
+        fontSize: '1.25rem'
     },
     typo_text: {
         color: 'white',
@@ -188,13 +190,13 @@ function Content(props) {
             {/* Name */}
             <Grid item xs={12}>
                 <Paper className={classes.paper_name}>
-                    <Typography variant={'h4'} className={classes.typo_name}>EDUARDO HIDALGO</Typography>
+                    <Typography variant={'h1'} className={classes.typo_name}>EDUARDO HIDALGO</Typography>
                 </Paper>
             </Grid>
             {/* Divider */}
             <Grid item className={classes.grid_divider}>
             <Paper className={'divider'}>
-                    <Typography noWrap variant={'h6'} className={classes.typo_textdivider + ' textdivider'}>SOFTWARE ENGINEER & FULLSTACK DEVELOPER</Typography>
+                    <Typography noWrap variant={'h2'} className={classes.typo_textdivider + ' textdivider'}>SOFTWARE ENGINEER & FULLSTACK DEVELOPER</Typography>
                 </Paper>
             </Grid>
             {/* Job & Role */}

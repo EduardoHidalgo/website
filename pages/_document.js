@@ -3,18 +3,52 @@ import PropTypes from 'prop-types';
 import Document, { Head, Main, NextScript } from 'next/document';
 import flush from 'styled-jsx/server';
 
+/* 
+keywords:
+eduardo hidalgo
+eduardo hidalgo díaz
+eduardo hidalgo díaz rugama
+eduardo hidalgo rugama
+eduardo rugama
+eduardo díaz
+eduardo díaz rugama
+
+eduardo hidalgo facebook
+eduardo hidalgo twitter
+eduardo hidalgo linkedin
+eduarod hidalgo platzi
+eduardo hidalgo software
+eduardo hidalgo engineer
+eduardo hidalgo ingeniero
+eduardo hidalgo web
+eduardo hidalgo webpage
+eduardo hidalgo developer
+eduardo hidalgo desarrollador
+eduardo hidalgo page
+eduardo hidalgo página
+eduardo hidalgo now
+eduardo hidalgo portafolio
+
+*/
+
 class MyDocument extends Document {
   render() {
     return (
       <html lang="en" dir="ltr">
         <Head>
-          {/* <!-- Meta Tags --> */}
+          <title>Eduardo Hidalgo Webpage</title>
+          {/* <!-- Meta Tags descriptivos --> */}
+          <meta name="description" content="Software Engineer and Fullstack Developer. Personal web page about Eduardo Hidalgo's projects and skills."></meta>
+          <meta name="author" content="Eduardo Hidalgo Díaz Rugama"/>
+          {/* <!-- Meta Tags compatibilidad y UX --> */}
           <meta httpEquiv="X-UA-Compatible" content="IE=Edge"/>
           <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-          <meta name="Robots" content="all"/>
-          <meta name="author" content="Eduardo Hidalgo Díaz Rugama"/>
+          <link rel='shortcut icon' type='image/x-icon' href='/static/favicon.ico' />
           {/* Use minimum-scale=1 to enable GPU rasterization */}
           <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"/>
+          {/* <!-- Meta Tags SEO --> */}
+          <meta name="Robots" content="all"/>
+          <meta name="google-site-verification" content="69Xur2nA0FF1A0mLjvdVdr1-T5Zbp7UIOITLaZ7vK9w" />
           <link href="https://fonts.googleapis.com/css?family=Oswald|PT+Sans+Narrow" rel="stylesheet"></link>
         </Head>
         <body>
