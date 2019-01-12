@@ -17,7 +17,7 @@
     "@material-ui/styles": "latest",
     "@zeit/next-css": "^1.0.1",
     "jss": "latest",
-    "next": "8.0.0-canary.2",
+    "next": "8.0.0-canary.6",
     "particles.js": "^2.0.0",
     "react": "next",
     "react-dom": "next"
