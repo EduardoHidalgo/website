@@ -172,7 +172,7 @@ function Content(props) {
             return  (
                 <Paper className={classes.paper_proyect} key={index}>
                     <Typography noWrap variant={'body2'} className={classes.typo_proyect}>
-                        <Link href={proyect.url}><a target="_blank">{props.width !== 'xs' && props.width !== 'sm' ? s1 : ''} {proyect.name}</a></Link>
+                        <Link href={proyect.url}><a target="_blank" rel="noopener noreferrer" onClick={reverseTabnabbingSecurity()}>{props.width !== 'xs' && props.width !== 'sm' ? s1 : ''} {proyect.name}</a></Link>
                     </Typography>
                     <Typography noWrap variant={'body2'} className={classes.typo_proyect}>&nbsp;- {proyect.description}</Typography>
                 </Paper>
@@ -182,7 +182,7 @@ function Content(props) {
                 <React.Fragment key={index}>
                     <Paper className={classes.paper_proyect}>
                         <Typography noWrap variant={'body2'} className={classes.typo_proyect}>
-                            <Link href={proyect.url}><a target="_blank">{proyect.name}</a></Link>
+                            <Link href={proyect.url}><a target="_blank" rel="noopener noreferrer" onClick={reverseTabnabbingSecurity()}>{proyect.name}</a></Link>
                         </Typography>
                     </Paper>
                     <Paper className={classes.paper_proyect} >
