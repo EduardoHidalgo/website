@@ -33,8 +33,15 @@ eduardo hidalgo portafolio
 
 class MyDocument extends Document {
   render() {
+    const comments = `/*
+    * version: 1.0.1
+    * features: react 16.8.1 + vulnerabilities fixes + SEO fixes
+    * date: 07/02/19 
+    */`;
+    
     return (
       <html lang="en" dir="ltr">
+        <script dangerouslySetInnerHTML={{ __html: comments}} />
         <Head>
           <title>Eduardo Hidalgo Webpage</title>
           {/* <!-- Meta Tags descriptivos --> */}
