@@ -18,9 +18,8 @@ function Index() {
 
   return (
     <div>
-      {/* <img className={'background'} src={'../static/darkbg.jpg'} /> */}
       <Content/>
-      {ParticlesJS !== null ? <div id="particles-js"></div> : "particles es nulo"}
+      {ParticlesJS !== null ? <div id="particles-js"></div> : ""}
     </div>
   )
 }
