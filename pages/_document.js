@@ -3,34 +3,6 @@ import PropTypes from 'prop-types';
 import Document, { Head, Main, NextScript } from 'next/document';
 import flush from 'styled-jsx/server';
 
-/* 
-keywords:
-eduardo hidalgo
-eduardo hidalgo díaz
-eduardo hidalgo díaz rugama
-eduardo hidalgo rugama
-eduardo rugama
-eduardo díaz
-eduardo díaz rugama
-
-eduardo hidalgo facebook
-eduardo hidalgo twitter
-eduardo hidalgo linkedin
-eduarod hidalgo platzi
-eduardo hidalgo software
-eduardo hidalgo engineer
-eduardo hidalgo ingeniero
-eduardo hidalgo web
-eduardo hidalgo webpage
-eduardo hidalgo developer
-eduardo hidalgo desarrollador
-eduardo hidalgo page
-eduardo hidalgo página
-eduardo hidalgo now
-eduardo hidalgo portafolio
-
-*/
-
 class MyDocument extends Document {
   render() {
     const comments = `/*
