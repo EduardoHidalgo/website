@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "generate:xml": "node scripts/GenerateXml.js"
   },
   "keywords": [],
   "author": "Eduardo Hidalgo Díaz Rugama",
@@ -19,7 +20,7 @@
     "jss": "latest",
     "next": "8.0.0-canary.18",
     "particles.js": "^2.0.0",
-    "react": "16.8.1",
-    "react-dom": "16.8.1"
+    "react": "16.7.0-alpha.2",
+    "react-dom": "16.7.0-alpha.2"
   }
 }
