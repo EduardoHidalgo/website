@@ -1,6 +1,6 @@
 {
-    "name": "blog",
-    "alias": "animation.now.sh",
+    "name": "personal web",
+    "alias": "eduardohidalgo.now.sh",
     "version": 2,
     "builds": [
       { "src": "package.json", "use": "@now/next" }
