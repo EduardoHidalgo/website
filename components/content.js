@@ -172,7 +172,7 @@ function Content(props) {
             return  (
                 <Paper className={classes.paper_proyect} key={index}>
                     <Typography noWrap variant={'body2'} className={classes.typo_proyect}>
-                        <Link href={proyect.url}><a target="_blank" rel="noopener noreferrer" onClick={reverseTabnabbingSecurity()}>{props.width !== 'xs' && props.width !== 'sm' ? s1 : ''} {proyect.name}</a></Link>
+                        <Link href={proyect.url}><a target="_blank" rel="noopener noreferrer" onClick={()=>reverseTabnabbingSecurity()}>{props.width !== 'xs' && props.width !== 'sm' ? s1 : ''} {proyect.name}</a></Link>
                     </Typography>
                     <Typography noWrap variant={'body2'} className={classes.typo_proyect}>&nbsp;- {proyect.description}</Typography>
                 </Paper>
@@ -182,7 +182,7 @@ function Content(props) {
                 <React.Fragment key={index}>
                     <Paper className={classes.paper_proyect}>
                         <Typography noWrap variant={'body2'} className={classes.typo_proyect}>
-                            <Link href={proyect.url}><a target="_blank" rel="noopener noreferrer" onClick={reverseTabnabbingSecurity()}>{proyect.name}</a></Link>
+                            <Link href={proyect.url}><a target="_blank" rel="noopener noreferrer" onClick={()=>reverseTabnabbingSecurity()}>{proyect.name}</a></Link>
                         </Typography>
                     </Paper>
                     <Paper className={classes.paper_proyect} >
@@ -212,7 +212,7 @@ function Content(props) {
                 <Paper className={classes.paper_job}>
                     <Typography noWrap variant={'body2'} className={classes.typo_text}>MERN Web Developer at @</Typography>
                     <Typography noWrap variant={'body2'} className={classes.typo_text}>
-                        <Link href="https://webmarina.now.sh/"><a target="_blank" rel="noopener noreferrer" onClick={reverseTabnabbingSecurity()}>&nbsp;Marina V&V</a></Link>
+                        <Link href="https://webmarina.now.sh/"><a target="_blank" rel="noopener noreferrer" onClick={()=>reverseTabnabbingSecurity()}>&nbsp;Marina V&V</a></Link>
                     </Typography>
                 </Paper>
             </Grid>
@@ -220,7 +220,7 @@ function Content(props) {
             <Hidden smDown>
                 <Grid container className={' gridPortfolio'}>
                     <Grid item xs={3} className={classes.grid_portfolio}>
-                        <a href="https://www.granplan.com/" target="_blank" rel="noopener noreferrer" onClick={reverseTabnabbingSecurity()}>
+                        <a href="https://www.granplan.com/" target="_blank" rel="noopener noreferrer" onClick={()=>reverseTabnabbingSecurity()}>
                             <Paper square className={classes.paper_portfolio}>
                                 <div className={'portfolioContainer ' + job1} 
                                 onMouseEnter={() => Job1('enter')} onMouseLeave={() => Job1('leave')}>
@@ -234,7 +234,7 @@ function Content(props) {
                         </a>
                     </Grid>
                     <Grid item xs={3} className={classes.grid_portfolio}>
-                        <a href="https://webmarina.now.sh/" target="_blank" rel="noopener noreferrer" onClick={reverseTabnabbingSecurity()}>
+                        <a href="https://webmarina.now.sh/" target="_blank" rel="noopener noreferrer" onClick={()=>reverseTabnabbingSecurity()}>
                             <Paper square className={classes.paper_portfolio}>
                             <div className={'portfolioContainer ' + job2} 
                             onMouseEnter={() => Job2('enter')} onMouseLeave={() => Job2('leave')}>
@@ -273,19 +273,19 @@ function Content(props) {
                     </Typography>
                     <Typography noWrap variant={'body2'} className={classes.typo_proyect}>&nbsp;consult my profile</Typography>
                     <Typography noWrap variant={'body2'} className={classes.typo_proyect}>
-                        <Link href="https://www.linkedin.com/in/eduardo-hdr/"><a target="_blank" rel="noopener noreferrer" onClick={reverseTabnabbingSecurity()}>&nbsp;LinkedIn</a></Link>,
+                        <Link href="https://www.linkedin.com/in/eduardo-hdr/"><a target="_blank" rel="noopener noreferrer" onClick={()=>reverseTabnabbingSecurity()}>&nbsp;LinkedIn</a></Link>,
                     </Typography>
                     <Typography noWrap variant={'body2'} className={classes.typo_proyect}>&nbsp;follow me at</Typography>
                     <Typography noWrap variant={'body2'} className={classes.typo_proyect}>
-                        <Link href="https://twitter.com/EduardoHidalgo0"><a target="_blank" rel="noopener noreferrer" onClick={reverseTabnabbingSecurity()}>&nbsp;Twitter</a></Link>,
+                        <Link href="https://twitter.com/EduardoHidalgo0"><a target="_blank" rel="noopener noreferrer" onClick={()=>reverseTabnabbingSecurity()}>&nbsp;Twitter</a></Link>,
                     </Typography>
                     <Typography noWrap variant={'body2'} className={classes.typo_proyect}>&nbsp;see my proyects in</Typography>
                     <Typography noWrap variant={'body2'} className={classes.typo_proyect}>
-                        <Link href="https://github.com/EduardoHidalgo"><a target="_blank" rel="noopener noreferrer" onClick={reverseTabnabbingSecurity()}>&nbsp;Github</a></Link>,
+                        <Link href="https://github.com/EduardoHidalgo"><a target="_blank" rel="noopener noreferrer" onClick={()=>reverseTabnabbingSecurity()}>&nbsp;Github</a></Link>,
                     </Typography>
                     <Typography noWrap variant={'body2'} className={classes.typo_proyect}>&nbsp;and view my Platzi certificates at</Typography>
                     <Typography noWrap variant={'body2'} className={classes.typo_proyect}>
-                        <Link href="https://platzi.com/@EduardoHidalgo/"><a target="_blank" rel="noopener noreferrer" onClick={reverseTabnabbingSecurity()}>&nbsp;Platzi.</a></Link>
+                        <Link href="https://platzi.com/@EduardoHidalgo/"><a target="_blank" rel="noopener noreferrer" onClick={()=>reverseTabnabbingSecurity()}>&nbsp;Platzi.</a></Link>
                     </Typography>
                 </Paper>
             </Grid>
