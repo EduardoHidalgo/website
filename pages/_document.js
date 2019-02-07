@@ -43,14 +43,14 @@ class MyDocument extends Document {
       <html lang="en" dir="ltr">
         <script dangerouslySetInnerHTML={{ __html: comments}} />
         <Head>
-          <title>Eduardo Hidalgo Webpage</title>
+          <title>Eduardo Hidalgo Personal Web</title>
           {/* <!-- Meta Tags descriptivos --> */}
-          <meta name="description" content="Software Engineer and Fullstack Developer. Personal web page about Eduardo Hidalgo's projects and skills."></meta>
+          <meta name="description" content="Eduardo Hidalgo, Software Engineer and Fullstack Developer. Personal web page about my projects and skills."></meta>
           <meta name="author" content="Eduardo Hidalgo Díaz Rugama"/>
           {/* <!-- Meta Tags compatibilidad y UX --> */}
           <meta httpEquiv="X-UA-Compatible" content="IE=Edge"/>
           <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-          <link rel='shortcut icon' type='image/x-icon' href='/static/favicon.ico' />
+          <link rel='icon' type='image/x-icon' href='/static/favicon.ico' />
           {/* Use minimum-scale=1 to enable GPU rasterization */}
           <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"/>
           {/* <!-- Meta Tags SEO --> */}
