@@ -6,9 +6,9 @@ import flush from 'styled-jsx/server';
 class MyDocument extends Document {
   render() {
     const comments = `/*
-    * version: 1.0.1
-    * features: react 16.8.1 + vulnerabilities fixes + SEO fixes
-    * date: 07/02/19 
+    * version: 1.0.2
+    * features: react 16.8.2 + Next 8.0.1
+    * date: 19/02/19 
     */`;
     
     return (

@@ -1,5 +1,5 @@
 {
-  "name": "next-react",
+  "name": "personal-web",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -18,9 +18,9 @@
     "@material-ui/styles": "latest",
     "@zeit/next-css": "^1.0.1",
     "jss": "latest",
-    "next": "8.0.0-canary.18",
+    "next": "^8.0.1",
     "particles.js": "^2.0.0",
-    "react": "16.7.0-alpha.2",
-    "react-dom": "16.7.0-alpha.2"
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2"
   }
 }
