@@ -6,9 +6,9 @@ import flush from 'styled-jsx/server';
 class MyDocument extends Document {
   render() {
     const comments = `/*
-    * version: 1.0.2
-    * features: react 16.8.2 + Next 8.0.1
-    * date: 19/02/19 
+    * version: 1.0.3
+    * features: react 16.8.5 y fix a los links, se abrían doble.
+    * date: 27/03/19 
     */`;
     
     return (
