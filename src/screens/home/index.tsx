@@ -9,8 +9,8 @@ export const HomeScreen = ({}: HomeScreenProps) => {
   return (
     <>
       <main className="flex min-h-full min-w-full h-screen w-screen bg-gray-900">
-        <div className="pt-8 px-8 flex h-screen w-screen flex-row items-center">
-          <div className="w-24 h-full ml-8 flex flex-col justify-between items-center">
+        <div className="md:pt-8 pt-4 xl:px-8 lg:px-8 px-2 flex h-screen w-screen flex-row items-center">
+          <div className="md:w-20 w-12 h-full xl:ml-8 lg:ml-8 md:ml-4 flex flex-col justify-between items-center">
             {/* Icon */}
             <Link>
               <img src="logo.png" className="cursor-pointer" />
@@ -32,33 +32,35 @@ export const HomeScreen = ({}: HomeScreenProps) => {
                 </Link>
               </div>
               {/* Divider Inverted */}
-              <div className="h-48 w-1 bg-gray-200" />
+              <div className="xl:h-48 lg:h-48 md:h-32 xs:h-24 sm:h-16 h-16 w-1 bg-gray-200" />
             </div>
           </div>
           {/* Content */}
-          <div className="grow h-full ml-32 flex flex-col items-start justify-center">
-            <p className="text-lg text-white pb-2 tracking-widest">
+          <div className="grow h-full w-full xl:ml-32 lg:ml-28 md:ml-16 ml-2 flex flex-col items-start justify-center">
+            <p className="md:text-lg text-lg text-white pb-2 tracking-widest">
               Hi, my name is
             </p>
-            <h1 className="text-7xl font-bold text-gray-200 pb-2">
+            <h1 className="md:text-6xl text-5xl font-bold text-gray-200 pb-2">
               Eduardo Hidalgo Díaz Rugama.
             </h1>
-            <h1 className="text-7xl text-gray-400 pb-8">
+            <h1 className="md:text-7xl text-xl text-gray-400 md:pb-8 pb-12">
               I transform ideas into technology.
             </h1>
-            <p className="text-xl text-gray-500 w-3/5">
+            <p className="md:text-xl text-lg text-gray-500 md:w-3/5 w-full">
               I'm a Software Engineer passionate about collaborating and
               building technology products using engineering and creativity. My
               vision is to improve the world through the impact of technology,
               digital transformation and the empowerment of high impact talent.
               Currently focused on build great products with{" "}
               <span className="text-white">
-                <Link>MisFans.</Link>
+                <Link newTab url="https://mis.fans">
+                  MisFans.
+                </Link>
               </span>
             </p>
           </div>
           {/* Menu */}
-          <div className="w-24 h-full mr-8 flex flex-col items-start justify-center "></div>
+          <div className="md:flex md:w-24 md:h-full md:mr-8 hidden flex-col items-start justify-center "></div>
         </div>
       </main>
       <Particles />
