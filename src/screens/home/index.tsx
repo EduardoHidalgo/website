@@ -37,13 +37,19 @@ export const HomeScreen = ({}: HomeScreenProps) => {
           </div>
           {/* Content */}
           <div className="grow h-full w-full xl:ml-32 lg:ml-28 md:ml-16 ml-2 flex flex-col items-start justify-center">
-            <p className="md:text-lg text-lg text-white pb-2 tracking-widest">
+            <p
+              data-nosnippet
+              className="md:text-lg text-lg text-white pb-2 tracking-widest"
+            >
               Hi, my name is
             </p>
             <h1 className="md:text-6xl text-5xl font-bold text-gray-200 pb-2">
               Eduardo Hidalgo Díaz Rugama.
             </h1>
-            <h1 className="md:text-7xl text-xl text-gray-400 md:pb-8 pb-12">
+            <h1
+              data-nosnippet
+              className="md:text-7xl text-xl text-gray-400 md:pb-8 pb-12"
+            >
               I transform ideas into technology.
             </h1>
             <p className="md:text-xl text-lg text-gray-500 md:w-3/5 w-full">

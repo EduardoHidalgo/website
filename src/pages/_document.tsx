@@ -6,6 +6,13 @@ export default class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <title>Eduardo Hidalgo</title>
+          <meta
+            name="description"
+            content="I'm a Software Engineer passionate about collaborating and
+              building technology products using engineering and creativity."
+          />
+          <meta name="googlebot" content="notranslate" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
         </Head>
         <body>
           <Main />

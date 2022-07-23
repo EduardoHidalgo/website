@@ -12,7 +12,7 @@ export const Particles = ({ isLoaded }: ParticlesProps) => {
     await loadFull(main);
   };
 
-  const particlesLoaded = async (_: Container) => {
+  const particlesLoaded = async (_: Container | undefined) => {
     isLoaded && isLoaded();
   };
 
