@@ -8,6 +8,15 @@ export interface ParticlesProps {
 }
 
 export const Particles = ({ isLoaded }: ParticlesProps) => {
+  let config = json;
+
+  if (typeof window !== "undefined") {
+    // detect window screen width function
+    if (window.innerWidth < 600) {
+      config.particles.number.value = 30;
+    }
+  }
+
   const particlesInit = async (main: Engine) => {
     await loadFull(main);
   };
@@ -22,7 +31,7 @@ export const Particles = ({ isLoaded }: ParticlesProps) => {
         id={"tsparticles"}
         init={particlesInit}
         loaded={particlesLoaded}
-        options={json as any}
+        options={config as any}
       />
     </>
   );

@@ -8,7 +8,7 @@ export interface HomeScreenProps {}
 export const HomeScreen = ({}: HomeScreenProps) => {
   return (
     <>
-      <main className="flex min-h-full min-w-full h-screen w-screen bg-gray-900">
+      <main className="flex min-h-full min-w-full h-screen w-screen bg-stone-900">
         <div className="md:pt-8 pt-4 xl:px-8 lg:px-8 px-2 flex h-screen w-screen flex-row items-center">
           <div className="md:w-20 w-12 h-full xl:ml-8 lg:ml-8 md:ml-4 flex flex-col justify-between items-center">
             {/* Icon */}
