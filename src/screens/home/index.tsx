@@ -57,12 +57,6 @@ export const HomeScreen = ({}: HomeScreenProps) => {
               building technology products using engineering and creativity. My
               vision is to improve the world through the impact of technology,
               digital transformation and the empowerment of high impact talent.
-              Currently focused on build great products with{" "}
-              <span className="text-white">
-                <Link newTab url="https://mis.fans">
-                  MisFans.
-                </Link>
-              </span>
             </p>
           </div>
           {/* Menu */}
