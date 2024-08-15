@@ -2,15 +2,15 @@ import { ReactNode } from "react";
 
 export interface LinkProps {
   children: ReactNode;
-  classes?: string;
+  className?: string;
   newTab?: boolean;
   url?: string;
 }
 
-export const Link = ({ classes, children, newTab, url }: LinkProps) => {
+export const Link = ({ className, children, newTab, url }: LinkProps) => {
   return (
     <a
-      className={classes && ""}
+      className={className}
       href={url ? url : ""}
       target={newTab ? "_blank" : undefined}
       rel={newTab ? "noopener noreferrer" : undefined}
