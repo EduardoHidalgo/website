@@ -1,12 +1,17 @@
-import { SiGithub, SiLinkedin, SiPlatzi, SiTwitter } from "react-icons/si";
-
-import { Particles } from "@/components/particles";
-import { Link } from "@/components/link";
+"use client";
+import { Contact } from "@/components/sections/contact";
+import { FeaturesSection } from "@/components/sections/features";
+import { Button } from "@/components/ui/button";
+import { Timeline } from "@/components/ui/timeline";
+import { VortexBackground } from "@/components/ui/vortex";
+import { projects } from "@/content/projects";
+import { cn } from "@/lib/utils";
 
 export interface HomeScreenProps {}
 
 export const HomeScreen = ({}: HomeScreenProps) => {
   return (
+<<<<<<< Updated upstream
     <>
       <main className="flex min-h-full min-w-full h-screen w-screen bg-stone-900">
         <div className="md:pt-8 pt-4 xl:px-8 lg:px-8 px-2 flex h-screen w-screen flex-row items-center">
@@ -65,5 +70,61 @@ export const HomeScreen = ({}: HomeScreenProps) => {
       </main>
       <Particles />
     </>
+=======
+    <main className="min-h-screen bg-black text-white">
+      <VortexBackground
+        backgroundColor="black"
+        rangeY={800}
+        particleCount={500}
+        baseHue={220}
+        className="fixed inset-0 w-full h-screen"
+      />
+      <div className="relative z-10 min-h-screen w-full">
+        {/* Hero Section */}
+        <div className="flex items-center flex-col justify-center min-h-screen">
+          <h1
+            className={cn(
+              "text-5xl md:text-7xl font-bold pb-8",
+              "bg-clip-text text-transparent text-center",
+              "bg-gradient-to-r from-white to-purple-500"
+            )}
+          >
+            Fullstack Cloud Engineer
+          </h1>
+          <p className="text-xl md:text-2xl mb-8 text-gray-300">
+            11+ years of transforming business challenges into elegant technical
+            solutions
+          </p>
+          <Button
+            size="lg"
+            variant="outline"
+            className={cn(
+              "border-purple-500 text-purple-500",
+              "hover:bg-purple-500 hover:text-white transition-all"
+            )}
+            onClick={() => {
+              document.getElementById("contact")?.scrollIntoView({
+                behavior: "smooth",
+              });
+            }}
+          >
+            Let's Build Something Amazing
+          </Button>
+        </div>
+        {/* Capabilities Section */}
+        <section className="py-20 px-4">
+          <FeaturesSection />
+        </section>
+        {/* Work Showcase Section */}
+        <section className="py-20 bg-gray-900">
+          <div className="w-full">
+            <Timeline data={projects} />
+          </div>
+        </section>
+        {/* Contact Section */}
+        <Contact />
+      </div>
+    </main>
+>>>>>>> Stashed changes
   );
 };
