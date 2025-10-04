@@ -63,7 +63,7 @@ export const HomeScreen = ({}: HomeScreenProps) => {
               CV's:
               <Link
                 newTab
-                url="https://docs.google.com/document/d/16DE9mg7s8_bQhA5p--NhJ_K4JJGENseVdjSUF7c0Wac/pub"
+                url="https://docs.google.com/document/d/1ZhJeKipt8e0N9sjxYxMLCygC3xqA3KWwK886i31dMKk/edit?usp=sharing"
                 className="underline decoration-2 text-blue-400 underline-offset-2"
               >
                 English
